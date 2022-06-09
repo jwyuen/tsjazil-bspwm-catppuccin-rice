@@ -22,4 +22,6 @@ sudo dnf -y install \
 stow -R .config -t $XDG_CONFIG_HOME -v
 stow -R .local -t $LOCAL_DIR -v
 
+addGlobalIncludesToKittyConf
+
 sudo fc-cache
